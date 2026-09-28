@@ -1,6 +1,6 @@
 # GoToPlace
 
-![Logo GoToPlace](frontend/img/logo.png)
+![Logo GoToPlace](img/logo.png)
 
 ## ✨ Características
 
@@ -55,7 +55,7 @@ GoToPlace/
 
 ## 📸 Captura
 
-![Captura de la demo](frontend/img/captura.jpg)
+![Captura de la demo](img/captura.jpg)
 *Captura de la demo de GoToPlace.*
 
 ## 📄 Licencia
