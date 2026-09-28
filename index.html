@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GoToPlace. HTML, CSS y JavaScript puro.">
+    <title>GoToPlace</title>
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin="">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="visually-hidden">GoToPlace</h1>
+        <img src="img/logo.png" alt="Logo GoToPlace" class="logo">
+    </header>
+
+    <main class="layout">
+        <section id="lugares" aria-labelledby="titulo-lugares">
+            <h2 class="section-title" id="titulo-lugares">Lugares turísticos</h2>
+            <div id="lista-places"></div>
+        </section>
+
+        <section id="mapa" aria-labelledby="titulo-mapa">
+            <h2 class="section-title" id="titulo-mapa">Ubicación en el mapa</h2>
+            <div id="map" aria-label="Mapa interactivo con los lugares turísticos"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright">© 2026 GoToPlace · Free &amp; Open Source</p>
+        <p class="nota">
+            Este componente llama a la Aplicación Google Maps, con el botón - Como llegar - y usando
+            <br>
+            la geolocalización de tu celular, te indica el camino para llegar al destino elegido.
+        </p>
+    </footer>
+
+    <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-name" hidden>
+        <div class="modal-content">
+            <button type="button" class="modal-close" aria-label="Cerrar">&times;</button>
+            <img id="modal-image" class="modal-image" alt="">
+            <h3 id="modal-name" class="modal-name"></h3>
+            <p id="modal-description" class="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+    <script src="data/places.js" defer></script>
+    <script src="js/script.js" defer></script>
+</body>
+</html>
